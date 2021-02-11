@@ -1,8 +1,6 @@
-import { Box, Center, Flex, useBreakpointValue, VStack } from '@chakra-ui/react'
-import Countdown from '../countdown'
-import CountdownTime from '../countdown-time'
+import { Box, useBreakpointValue } from '@chakra-ui/react'
+import Countdown from './countdown'
 import HeroButtonGroup from './hero-button-group'
-import HeroCountdown from './hero-countdown'
 import HeroTitle from './hero-title'
 
 function Hero() {

@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { Box, Grid, HStack } from '@chakra-ui/react'
-import CountdownItem from './countdown-item'
 import ReactCountdown from 'react-countdown'
+import { Box, Grid } from '@chakra-ui/react'
+import CountdownItem from './countdown-item'
 import CountdownTime from './countdown-time'
 
 // Random component

@@ -6,9 +6,10 @@ function HeroButtonGroup() {
   return (
     <Flex
       flexDirection={{ base: 'column', md: 'row' }}
-      justifyContent={{ base: 'center' }}
-      align='center'
+      justifyContent={{ base: 'center', xl: 'flex-start' }}
+      align={{ base: 'center' }}
       my={{ base: 4, md: 6 }}
+      w={{ base: '100%' }}
     >
       <PrimaryButton icon={<Image src='/icons/timeline.svg' />}>
         Timeline

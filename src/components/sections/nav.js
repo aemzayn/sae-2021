@@ -40,10 +40,10 @@ export default function Nav() {
       align='center'
       justify='space-between'
       wrap='wrap'
-      w='100%'
+      w='90%'
+      maxW='1400px'
       mx='auto'
       py={{ base: 6, lg: 8 }}
-      px='5%'
       bg='white'
     >
       <Logo />
