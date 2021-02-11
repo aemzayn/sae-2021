@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'ProductSans';
+  src: url('/fonts/ProductSans/ProductSans-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ProductSans';
+  src: url('/fonts/ProductSans/ProductSans-Bold.ttf');
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+* {
+  font-family: ProductSans, sans-serif;
+}
+
+.logo h2:first-child {
+  font-family: 'Montserrat', sans-serif;
+}
+
+*:focus {
+  box-shadow: none !important;
+}
