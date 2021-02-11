@@ -1,0 +1,83 @@
+.timelineTitle {
+  border-image: linear-gradient(
+    93deg,
+    rgba(247, 156, 3, 1) 0%,
+    rgba(248, 183, 59, 1) 100%
+  );
+  border-image-slice: 1;
+  border-left-width: 5px;
+}
+
+.timeline {
+  margin: 0;
+  // padding: 0 4em;
+  div {
+    font-size: 1em;
+    line-height: 1.75em;
+    border-top: 3px solid;
+    border-image: linear-gradient(
+      93deg,
+      rgba(247, 156, 3, 1) 0%,
+      rgba(248, 183, 59, 1) 100%
+    );
+    border-image-slice: 1;
+    border-width: 3px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    margin: 0;
+    padding: 40px;
+    counter-increment: section;
+    position: relative;
+    color: black;
+
+    //numbers
+    &:before {
+      content: counter(section);
+      position: absolute;
+      border-radius: 50%;
+      right: 100%;
+      transform: translateX(42.5%);
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 1.25em;
+      width: 1.25em;
+      background-image: linear-gradient(
+        to bottom,
+        rgba(255, 56, 80, 1) 15%,
+        rgba(247, 156, 3, 1) 100%
+      );
+      text-align: center;
+      line-height: 1.25em;
+      color: white;
+      font-size: 1em;
+    }
+
+    // Ganjil
+    &:nth-child(odd) {
+      border-right: none;
+    }
+
+    // Genap
+    &:nth-child(2n) {
+      border-left: none;
+    }
+
+    &:nth-child(2n):before {
+      right: 0%;
+      transform: translateX(57.5%);
+    }
+
+    /* handle first and last */
+    &:first-child {
+      border-top: none;
+      border-right: none;
+    }
+
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 4rem;
+    }
+  }
+}

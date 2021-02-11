@@ -13,6 +13,8 @@ const colors = {
       'linear-gradient(51deg, rgba(255,56,80,1) 15%, rgba(247,156,3,1) 100%)',
     light:
       'radial-gradient(at bottom center, rgba(253,207,116,1) 0%, rgba(249,235,208,1) 100%)',
+    orange:
+      'linear-gradient(125deg, rgba(252,233,236,1) 0%, rgba(250,241,222,1) 100%)',
   },
   // Font size
   fs: {
@@ -38,6 +40,11 @@ const breakpoints = createBreakpoints({
   xxl: '96em',
 })
 
-const theme = extendTheme({ colors, breakpoints })
+const fonts = {
+  heading: 'Product Sans',
+  body: 'Product Sans',
+}
+
+const theme = extendTheme({ fonts, colors, breakpoints })
 
 export default theme

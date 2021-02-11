@@ -14,8 +14,8 @@ function HeroAbout() {
       flexDir={{ base: 'column', md: 'row' }}
       // minH='100vh'
       bg='white'
-      mt={{ base: 10, md: '7em' }}
-      pb='10vh'
+      my={{ base: '10vh', md: '15vh' }}
+      // my='10vh'
       w={{ base: '100%', md: '90%' }}
       mx='auto'
       maxW='1400px'
