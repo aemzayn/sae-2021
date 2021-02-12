@@ -24,6 +24,7 @@ function HomeTimeline() {
           <TimelineItem />
           <TimelineItem />
           <TimelineItem />
+          <TimelineItem />
         </Box>
       </Box>
     </Box>

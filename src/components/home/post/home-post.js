@@ -1,6 +1,7 @@
 import { VStack } from '@chakra-ui/react'
 import HomePostTitle from './home-post-title'
 import PostItem from './post-item'
+import PrimaryButton from '../../buttons/primary-btn'
 
 function HomePost() {
   return (
@@ -18,6 +19,7 @@ function HomePost() {
         <PostItem />
         <PostItem />
       </VStack>
+      <PrimaryButton href='/news'>Read More</PrimaryButton>
     </VStack>
   )
 }

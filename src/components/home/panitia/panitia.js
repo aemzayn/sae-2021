@@ -8,7 +8,7 @@ import {
 } from '@chakra-ui/react'
 
 function Panitia() {
-  const nameSize = useBreakpointValue({ base: 'md', md: 'lg' })
+  const nameSize = useBreakpointValue({ base: 'md', md: 'md', lg: 'lg' })
   return (
     <Box>
       <Box
@@ -24,6 +24,7 @@ function Panitia() {
           objectPosition='center'
           src='https://upload.wikimedia.org/wikipedia/commons/1/1e/Default-avatar.jpg'
           borderRadius='50%'
+          draggable={false}
         />
       </Box>
       <VStack mt='2' spacing={{ base: 1 }}>
@@ -32,10 +33,13 @@ function Panitia() {
           as='h4'
           size={nameSize}
           fontWeight='normal'
+          textAlign='center'
         >
           John Doe
         </Heading>
-        <Text color='gray.500'>Manager</Text>
+        <Text color='gray.500' textAlign='center'>
+          Manager
+        </Text>
       </VStack>
     </Box>
   )

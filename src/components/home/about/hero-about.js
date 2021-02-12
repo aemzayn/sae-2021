@@ -12,10 +12,8 @@ function HeroAbout() {
     <Box
       d='flex'
       flexDir={{ base: 'column', md: 'row' }}
-      // minH='100vh'
       bg='white'
       my={{ base: '10vh', md: '15vh' }}
-      // my='10vh'
       w={{ base: '100%', md: '90%' }}
       mx='auto'
       maxW='1400px'
@@ -27,6 +25,10 @@ function HeroAbout() {
           w='100%'
           h='100%'
           objectFit='cover'
+          borderRadius={{ base: false, md: 'xl' }}
+          boxShadow='xl'
+          draggable={false}
+          loading='lazy'
         />
       </Box>
       <Box
@@ -60,8 +62,7 @@ function HeroAbout() {
         <Text
           my={{ base: 4, md: 6 }}
           fontSize={{ base: 'lg' }}
-          color='brand.blue'
-          opacity='0.9'
+          color='gray.500'
           lineHeight={{ base: '1.4' }}
         >
           Sebagai sidang tertinggi dalam perhimpunan pelajar Indonesia se-Dunia
@@ -70,7 +71,10 @@ function HeroAbout() {
           diselenggarakan setiap tahun.
         </Text>
 
-        <PrimaryButton icon={<Image src='/icons/arrow-right.svg' />}>
+        <PrimaryButton
+          icon={<Image src='/icons/arrow-right.svg' />}
+          href='/event'
+        >
           Lanjut Baca
         </PrimaryButton>
       </Box>

@@ -7,7 +7,7 @@ function PostItem() {
       <Heading as='h3' size={postSize} color='brand.blue'>
         Lorem ipsum dolor sit amet consectetur adipisicing.
       </Heading>
-      <Text color='#718096' mt='2'>
+      <Text color='gray.500' mt='2'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
         distinctio similique inventore deleniti itaque laudantium explicabo.
         Laboriosam voluptatum veritatis quibusdam earum officia, ad omnis

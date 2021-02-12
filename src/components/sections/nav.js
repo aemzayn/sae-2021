@@ -75,7 +75,11 @@ export default function Nav() {
 
 const Logo = () => (
   <Box h='40px'>
-    <Image h='100%' src={'/logo.png'} alt='logo' />
+    <Link href='/'>
+      <a>
+        <Image h='100%' src={'/logo.png'} alt='logo' />
+      </a>
+    </Link>
   </Box>
 )
 
@@ -97,6 +101,7 @@ function NavItem({ href, name }) {
         right: 0,
         bottom: { base: '-4px', md: '-6px', xl: '-8px' },
         bg: isActive ? 'gradient.main' : 'none',
+        borderRadius: '1rem',
       }}
     >
       <Link href={href}>

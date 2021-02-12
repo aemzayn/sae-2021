@@ -1,8 +1,10 @@
 import { Box, Flex, Image } from '@chakra-ui/react'
 import PrimaryButton from '../../buttons/primary-btn'
 import SecondaryButton from '../../buttons/secondary-btn'
+import { useRouter } from 'next/router'
 
 function HeroButtonGroup() {
+  const router = useRouter()
   return (
     <Flex
       flexDirection={{ base: 'column', md: 'row' }}
@@ -11,7 +13,10 @@ function HeroButtonGroup() {
       my={{ base: 4, md: 6 }}
       w={{ base: '100%' }}
     >
-      <PrimaryButton icon={<Image src='/icons/timeline.svg' />}>
+      <PrimaryButton
+        icon={<Image src='/icons/timeline.svg' />}
+        href='/#timeline'
+      >
         Timeline
       </PrimaryButton>
       <Box
@@ -19,7 +24,7 @@ function HeroButtonGroup() {
         mt={{ base: 2, md: 0 }}
         ml={{ base: 0, md: 3 }}
       >
-        <SecondaryButton>Buku Saku</SecondaryButton>
+        <SecondaryButton href='/buku-saku'>Buku Saku</SecondaryButton>
       </Box>
     </Flex>
   )

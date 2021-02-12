@@ -7,6 +7,7 @@ const colors = {
     light: '#F9EBD0',
     red: '#CF0B23',
     blue: '#213E5A',
+    pink: '#FCE9EC',
   },
   gradient: {
     main:
@@ -14,7 +15,7 @@ const colors = {
     light:
       'radial-gradient(at bottom center, rgba(253,207,116,1) 0%, rgba(249,235,208,1) 100%)',
     orange:
-      'linear-gradient(125deg, rgba(252,233,236,1) 0%, rgba(250,241,222,1) 100%)',
+      'linear-gradient(6deg, rgba(252,233,236,1) 0%, rgba(250,241,222,1) 100%)',
   },
   // Font size
   fs: {

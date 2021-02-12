@@ -1,5 +1,6 @@
 import { Button, forwardRef } from '@chakra-ui/react'
 import { motion, isValidMotionProp } from 'framer-motion'
+import Link from 'next/link'
 
 const MotionButton = motion.custom(
   forwardRef((props, ref) => {
@@ -13,22 +14,22 @@ const MotionButton = motion.custom(
 
 function SecondaryButton({ children = 'Button', href, icon }) {
   return (
-    <MotionButton
-      // pos='relative'
-      bg='white'
-      variant='outline'
-      color='gray.400'
-      // px='5'
-      width={{ base: '100%', sm: '100%', md: 'fit-content' }}
-      size='lg'
-      rightIcon={icon && icon}
-      transition='all 200ms ease-in-out'
-      _active={{
-        color: 'gradient.main',
-      }}
-    >
-      {children}
-    </MotionButton>
+    <Link href={href}>
+      <MotionButton
+        bg='white'
+        variant='outline'
+        color='gray.400'
+        width={{ base: '100%', sm: '100%', md: 'fit-content' }}
+        size='lg'
+        rightIcon={icon && icon}
+        transition='all 200ms ease-in-out'
+        _active={{
+          color: 'gradient.main',
+        }}
+      >
+        <a>{children}</a>
+      </MotionButton>
+    </Link>
   )
 }
 
