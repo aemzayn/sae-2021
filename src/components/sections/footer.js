@@ -2,7 +2,7 @@ import { Center, Image, Text } from '@chakra-ui/react'
 
 function Footer() {
   return (
-    <Center w='90%' maxW='1400px' mx='auto' py={{ base: 3 }}>
+    <Center w='90%' maxW='1400px' mx='auto' py={{ base: 3 }} as='footer'>
       <Text
         d='flex'
         fontSize={{ base: 'xs', md: 'sm', lg: 'md' }}

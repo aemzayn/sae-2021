@@ -44,11 +44,15 @@ export default function Nav() {
       maxW='1400px'
       mx='auto'
       py={{ base: 6, lg: 8 }}
-      bg='white'
+      bg='transparent'
     >
       <Logo />
 
-      <Box display={{ base: 'block', md: 'none' }} onClick={toggleMenu}>
+      <Box
+        cursor='pointer'
+        display={{ base: 'block', md: 'none' }}
+        onClick={toggleMenu}
+      >
         {show ? <CloseIcon /> : <MenuIcon />}
       </Box>
 

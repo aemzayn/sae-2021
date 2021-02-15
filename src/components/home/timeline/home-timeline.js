@@ -5,7 +5,7 @@ import styles from './timeline.module.scss'
 function HomeTimeline() {
   const titleSize = useBreakpointValue({ base: '2xl' })
   return (
-    <Box bg='gradient.orange' id='timeline'>
+    <Box bg='gradient.orange' id='timeline' as='section'>
       <Box maxW='1400px' w='90%' mx='auto'>
         <Heading
           fontFamily='fontFamily.main'

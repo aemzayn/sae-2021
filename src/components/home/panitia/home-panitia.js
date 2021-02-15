@@ -15,6 +15,7 @@ function HomePanitia() {
       bg='gradient.orange'
       py={{ base: '5vh' }}
       mb={{ base: '10vh', md: '15vh' }}
+      as='section'
     >
       <Box
         d='flex'

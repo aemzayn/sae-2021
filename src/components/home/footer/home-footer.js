@@ -4,7 +4,7 @@ import ContactIcon from './contact-icon'
 
 function HomeFooter() {
   return (
-    <Box bg='brand.pink'>
+    <Box bg='brand.pink' as='section'>
       <Flex
         flexDir={{ base: 'column', md: 'row' }}
         w='90%'

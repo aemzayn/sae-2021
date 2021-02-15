@@ -3,9 +3,10 @@ import HomePostTitle from './home-post-title'
 import PostItem from './post-item'
 import PrimaryButton from '../../buttons/primary-btn'
 
-function HomePost() {
+export default function HomePost({ posts }) {
   return (
     <VStack
+      as='section'
       spacing={{ base: 6 }}
       maxW='1400px'
       mx='auto'
@@ -15,13 +16,11 @@ function HomePost() {
     >
       <HomePostTitle />
       <VStack spacing={{ base: 7 }}>
-        <PostItem />
-        <PostItem />
-        <PostItem />
+        {posts?.map((p, i) => (
+          <PostItem key={i} post={p} />
+        ))}
       </VStack>
       <PrimaryButton href='/news'>Read More</PrimaryButton>
     </VStack>
   )
 }
-
-export default HomePost

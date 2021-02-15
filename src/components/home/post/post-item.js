@@ -1,17 +1,19 @@
 import { Box, Heading, Text, useBreakpointValue } from '@chakra-ui/react'
+import Link from 'next/link'
 
-function PostItem() {
+function PostItem({ post }) {
   const postSize = useBreakpointValue({ base: 'md' })
   return (
     <Box>
-      <Heading as='h3' size={postSize} color='brand.blue'>
-        Lorem ipsum dolor sit amet consectetur adipisicing.
-      </Heading>
+      <Link href={`/news/${post?.slug}`}>
+        <a>
+          <Heading as='h3' size={postSize} color='brand.blue'>
+            {post?.title}
+          </Heading>
+        </a>
+      </Link>
       <Text color='gray.500' mt='2'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
-        distinctio similique inventore deleniti itaque laudantium explicabo.
-        Laboriosam voluptatum veritatis quibusdam earum officia, ad omnis
-        sapiente atque quo, quasi minus. Laudantium.
+        {post?.excerpt}
       </Text>
     </Box>
   )

@@ -1,0 +1,20 @@
+{
+  "site_title": "SAE 2021",
+  "base_url": "https://sae-amerop.vercel.app",
+  "site_keywords": [
+    {
+      "keyword": "PPI Amerop"
+    },
+    {
+      "keyword": "Simposium Amerika Eropa"
+    },
+    {
+      "keyword": "PPI Dunia"
+    }
+  ],
+  "site_description": "",
+  "contact_address": "Portugal",
+  "contact_email": "sae.amerop@gmail.com",
+  "instagram_account": "saeiberia2021",
+  "posts_per_page": 3
+}

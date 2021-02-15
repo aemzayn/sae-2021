@@ -29,7 +29,11 @@ function CountdownItem({ label, time = '00' }) {
         boxShadow={{ base: 'md', md: 'lg' }}
         borderRadius={borderRadius}
       >
-        <Heading size={headingSize} color='brand.blue'>
+        <Heading
+          size={headingSize}
+          color='brand.blue'
+          suppressHydrationWarning={true}
+        >
           {time}
         </Heading>
       </Box>

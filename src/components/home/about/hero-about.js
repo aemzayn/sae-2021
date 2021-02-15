@@ -17,6 +17,7 @@ function HeroAbout() {
       w={{ base: '100%', md: '90%' }}
       mx='auto'
       maxW='1400px'
+      as='section'
     >
       <Box w={{ base: '100%', md: '80%' }} maxW='1400px' mx='auto'>
         <Image

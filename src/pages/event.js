@@ -1,5 +1,16 @@
-function Event() {
-  return <div>Event</div>
-}
+import GradientHeading from '../components/sections/gradientHeading'
+import PageLayout from '../components/sections/page-layout'
+import SEO from '../components/seo'
 
-export default Event
+export default function Event() {
+  return (
+    <PageLayout>
+      <SEO
+        title='Event'
+        url='/event'
+        description='Event di Simposium Amerika Eropa 2021'
+      />
+      <GradientHeading>Event</GradientHeading>
+    </PageLayout>
+  )
+}
