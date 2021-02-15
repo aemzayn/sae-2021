@@ -4,6 +4,7 @@ import GradientHeading from '../../components/sections/gradientHeading'
 import SEO from '../../components/seo'
 import config from '../../components/seo/config.json'
 import { listPosts } from '../../lib/posts'
+import PageLayout from '../../components/sections/page-layout'
 
 export default function News({ posts }) {
   return (
