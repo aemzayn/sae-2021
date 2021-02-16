@@ -20,11 +20,17 @@ function SEO({ title, description, keywords, author, url, image }) {
         }
       />
       {author && <meta name='author' content={author} />}
-      <link rel='canonical' href={config.base_url + url} />
+      <link
+        rel='canonical'
+        href={url ? config.base_url + url : config.base_url}
+      />
 
       {/* Open Graph Meta */}
       <meta property='og:site_name' content={config.site_title} />
-      <meta property='og:url' content={config.base_url + url} />
+      <meta
+        property='og:url'
+        content={url ? config.base_url + url : config.base_url}
+      />
       <meta
         property='og:title'
         content={title ? [title, config.site_title].join(' | ') : ''}

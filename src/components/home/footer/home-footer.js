@@ -38,6 +38,7 @@ function HomeFooter() {
                 href='https://instagram.com/saeiberia2021'
                 target='_blank'
                 color='brand.blue'
+                rel='noopener'
               >
                 @saeiberia2021
               </Text>

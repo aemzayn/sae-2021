@@ -74,6 +74,7 @@ function HeroAbout() {
 
         <PrimaryButton
           icon={<Image src='/icons/arrow-right.svg' />}
+          name='Lanjut Baca'
           href='/news/menelusuri-lebih-dalam-simposium-ppi-dunia-kawasan-amerika-eropa'
         >
           Lanjut Baca

@@ -7,7 +7,7 @@ import {
   VStack,
 } from '@chakra-ui/react'
 
-function Panitia() {
+function Panitia({ name = 'John Doe', role = 'Anggota', img }) {
   const nameSize = useBreakpointValue({ base: 'md', md: 'md', lg: 'lg' })
   return (
     <Box>
@@ -25,20 +25,21 @@ function Panitia() {
           src='https://upload.wikimedia.org/wikipedia/commons/1/1e/Default-avatar.jpg'
           borderRadius='50%'
           draggable={false}
+          alt={name}
         />
       </Box>
       <VStack mt='2' spacing={{ base: 1 }}>
         <Heading
           fontFamily='fontFamily.main'
-          as='h4'
+          as='h3'
           size={nameSize}
           fontWeight='normal'
           textAlign='center'
         >
-          John Doe
+          {name}
         </Heading>
         <Text color='gray.500' textAlign='center'>
-          Manager
+          {role}
         </Text>
       </VStack>
     </Box>

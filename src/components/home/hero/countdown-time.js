@@ -12,12 +12,12 @@ function CountdownTime() {
       mx='auto'
     >
       <Flex fontSize={fontSize} align='center' ml={{ base: 1, md: 2 }}>
-        <Image src='/icons/calendar.svg' mr={1} />
+        <Image src='/icons/calendar.svg' mr={1} alt='Calendar icon' />
         <Text>Juni 2021</Text>
       </Flex>
       <Flex fontSize={fontSize} align='center' mr={{ base: 1, md: 2, xl: 0 }}>
-        <Image src='/icons/pin.svg' mr={1} />
-        <Text>Portugal</Text>
+        <Image src='/icons/pin.svg' alt='Location icon' mr={1} />
+        <Text>Iberia</Text>
       </Flex>
     </Flex>
   )

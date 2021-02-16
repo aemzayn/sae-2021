@@ -15,7 +15,8 @@ function HeroButtonGroup() {
     >
       <PrimaryButton
         icon={<Image src='/icons/timeline.svg' />}
-        href='/#timeline'
+        href='/PrimaryButton#timeline'
+        name='timeline'
       >
         Timeline
       </PrimaryButton>

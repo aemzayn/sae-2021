@@ -12,10 +12,11 @@ const MotionButton = motion.custom(
   })
 )
 
-function SecondaryButton({ children = 'Button', href, icon }) {
+function SecondaryButton({ children = 'Button', href, icon, name }) {
   return (
     <Link href={href}>
       <MotionButton
+        name={name}
         bg='white'
         variant='outline'
         color='gray.400'

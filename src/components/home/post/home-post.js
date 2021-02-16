@@ -20,7 +20,9 @@ export default function HomePost({ posts }) {
           <PostItem key={i} post={p} />
         ))}
       </VStack>
-      <PrimaryButton href='/news'>Read More</PrimaryButton>
+      <PrimaryButton href='/news' name='Semua post'>
+        Semua Post
+      </PrimaryButton>
     </VStack>
   )
 }

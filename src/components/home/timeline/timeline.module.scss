@@ -1,10 +1,6 @@
 .timelineTitle {
-  border-image: linear-gradient(
-    93deg,
-    rgba(247, 156, 3, 1) 0%,
-    rgba(248, 183, 59, 1) 100%
-  );
-  border-image-slice: 1;
+  border-color: rgb(247, 156, 3);
+  border-style: solid;
   border-left-width: 5px;
 }
 
@@ -14,11 +10,7 @@
     font-size: 1em;
     line-height: 1.75em;
     border-top: 3px solid;
-    border-image: linear-gradient(
-      93deg,
-      rgba(247, 156, 3, 1) 0%,
-      rgba(248, 183, 59, 1) 100%
-    );
+    border-color: rgb(247, 156, 3);
     border-image-slice: 1;
     border-width: 3px;
     border-left-width: 5px;

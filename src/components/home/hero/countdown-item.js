@@ -33,12 +33,13 @@ function CountdownItem({ label, time = '00' }) {
           size={headingSize}
           color='brand.blue'
           suppressHydrationWarning={true}
+          fontFamily='fontFamily.main'
         >
           {time}
         </Heading>
       </Box>
       <Box px='0' py={{ base: 3, md: 6, xl: 4 }}>
-        <Text fontSize={labelfontSize} color='gray.500'>
+        <Text fontSize={labelfontSize} color='gray.600'>
           {label}
         </Text>
       </Box>

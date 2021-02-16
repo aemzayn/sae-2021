@@ -8,7 +8,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang='id'>
         <Head>
           <link
             rel='apple-touch-icon'
@@ -87,7 +87,7 @@ class MyDocument extends Document {
           />
           <meta name='theme-color' content='#ffffff' />
         </Head>
-        <body>
+        <body aria-hidden='true'>
           <Main />
           <NextScript />
         </body>

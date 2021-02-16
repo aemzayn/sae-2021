@@ -115,5 +115,5 @@ function NavItem({ href, name }) {
   )
 }
 
-const MenuIcon = () => <Image src='/icons/menu.svg' />
-const CloseIcon = () => <Image src='/icons/close.svg' />
+const MenuIcon = () => <Image src='/icons/menu.svg' alt='Nav menu open' />
+const CloseIcon = () => <Image src='/icons/close.svg' alt='Nav menu close' />

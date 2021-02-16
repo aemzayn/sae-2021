@@ -12,7 +12,7 @@ const MotionButton = motion.custom(
   })
 )
 
-function PrimaryButton({ children, href, icon }) {
+function PrimaryButton({ children, href, icon, name }) {
   return (
     <Link href={href}>
       <MotionButton
@@ -30,6 +30,7 @@ function PrimaryButton({ children, href, icon }) {
         _hover={{
           bg: 'gradient.main',
         }}
+        name={name}
       >
         <a>{children}</a>
       </MotionButton>
