@@ -5,7 +5,6 @@ function GradientHeading({ children }) {
   return (
     <Heading
       color='brand.main'
-      fontFamily='fontFamily.main'
       size={titleSize}
       bg='gradient.main'
       backgroundClip='text'

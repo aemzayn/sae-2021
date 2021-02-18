@@ -4,7 +4,6 @@ import SecondaryButton from '../../buttons/secondary-btn'
 import { useRouter } from 'next/router'
 
 function HeroButtonGroup() {
-  const router = useRouter()
   return (
     <Flex
       flexDirection={{ base: 'column', md: 'row' }}
@@ -15,7 +14,7 @@ function HeroButtonGroup() {
     >
       <PrimaryButton
         icon={<Image src='/icons/timeline.svg' />}
-        href='/PrimaryButton#timeline'
+        href='/#timeline'
         name='timeline'
       >
         Timeline

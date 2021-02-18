@@ -14,23 +14,13 @@
   font-display: swap;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   min-height: 100vh;
-}
-
-*,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: ProductSans, sans-serif;
-}
-
-.logo h2:first-child {
-  font-family: 'Montserrat', sans-serif;
 }
 
 *:focus {

@@ -25,12 +25,7 @@ function HomePanitia() {
         mx='auto'
         bg='gradient.orange'
       >
-        <Heading
-          fontFamily='fontFamily.main'
-          size={titleSize}
-          color='brand.blue'
-          textAlign='center'
-        >
+        <Heading size={titleSize} color='brand.blue' textAlign='center'>
           Susunan{' '}
           <Text as='span' color='brand.red'>
             Panitia

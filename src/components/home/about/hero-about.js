@@ -43,11 +43,7 @@ function HeroAbout() {
         mt={{ base: 4, md: 0 }}
         pl={{ base: 0, md: '5%' }}
       >
-        <Heading
-          color='brand.blue'
-          size={headingSize}
-          fontFamily='fontFamily.main'
-        >
+        <Heading color='brand.blue' size={headingSize}>
           Tentang Simposium{' '}
           <Text
             as='span'

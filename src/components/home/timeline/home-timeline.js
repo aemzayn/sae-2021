@@ -8,7 +8,6 @@ function HomeTimeline() {
     <Box bg='gradient.orange' id='timeline' as='section'>
       <Box maxW='1400px' w='90%' mx='auto'>
         <Heading
-          fontFamily='fontFamily.main'
           size={titleSize}
           color='brand.red'
           textAlign='center'

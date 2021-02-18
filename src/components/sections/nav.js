@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Box, Flex, HStack, Image, Stack, Text } from '@chakra-ui/react'
+import { Box, Flex, Image, Stack, Text } from '@chakra-ui/react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
@@ -52,6 +52,7 @@ export default function Nav() {
         cursor='pointer'
         display={{ base: 'block', md: 'none' }}
         onClick={toggleMenu}
+        outline='none'
       >
         {show ? <CloseIcon /> : <MenuIcon />}
       </Box>
@@ -81,7 +82,7 @@ const Logo = () => (
   <Box h='40px'>
     <Link href='/'>
       <a>
-        <Image h='100%' src={'/logo.png'} alt='logo' />
+        <Image h='100%' src={'/logo.png'} alt='logo' loading='eager' />
       </a>
     </Link>
   </Box>
@@ -115,5 +116,9 @@ function NavItem({ href, name }) {
   )
 }
 
-const MenuIcon = () => <Image src='/icons/menu.svg' alt='Nav menu open' />
-const CloseIcon = () => <Image src='/icons/close.svg' alt='Nav menu close' />
+const MenuIcon = () => (
+  <Image src='/icons/menu.svg' alt='Nav menu open' loading='eager' />
+)
+const CloseIcon = () => (
+  <Image src='/icons/close.svg' alt='Nav menu close' loading='eager' />
+)

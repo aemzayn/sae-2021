@@ -33,7 +33,6 @@ function CountdownItem({ label, time = '00' }) {
           size={headingSize}
           color='brand.blue'
           suppressHydrationWarning={true}
-          fontFamily='fontFamily.main'
         >
           {time}
         </Heading>

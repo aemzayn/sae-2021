@@ -29,13 +29,7 @@ function Panitia({ name = 'John Doe', role = 'Anggota', img }) {
         />
       </Box>
       <VStack mt='2' spacing={{ base: 1 }}>
-        <Heading
-          fontFamily='fontFamily.main'
-          as='h3'
-          size={nameSize}
-          fontWeight='normal'
-          textAlign='center'
-        >
+        <Heading as='h3' size={nameSize} fontWeight='normal' textAlign='center'>
           {name}
         </Heading>
         <Text color='gray.500' textAlign='center'>

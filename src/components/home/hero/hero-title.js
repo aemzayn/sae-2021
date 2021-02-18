@@ -15,7 +15,6 @@ function HeroTitle() {
       size={size}
       mt={{ base: 10, xl: 0 }}
       color='brand.blue'
-      fontFamily='fontFamily.main'
       w={{ base: '100%', md: '90%', xl: '100%' }}
       mx={{ base: 'auto', xl: 0 }}
     >
