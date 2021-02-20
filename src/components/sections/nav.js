@@ -70,7 +70,7 @@ export default function Nav() {
           spacing='5'
         >
           {routes.map((r, i) => (
-            <NavItem key={i} name={r.name} href={r.href} />
+            <NavItem key={i} name={r.name} href={r.href} setShow={setShow} />
           ))}
         </Stack>
       </Box>
@@ -88,11 +88,12 @@ const Logo = () => (
   </Box>
 )
 
-function NavItem({ href, name }) {
+function NavItem({ href, name, setShow }) {
   const router = useRouter()
   const isActive = router.pathname === href
   return (
     <Text
+      onClick={() => setShow(false)}
       color={isActive ? 'black' : 'gray.500'}
       pos='relative'
       _hover={{
