@@ -10,7 +10,7 @@ import config from '../components/seo/config.json'
 
 export default function Home({ posts }) {
   return (
-    <div>
+    <>
       <SEO title='Home' />
       <Hero />
       <HeroAbout />
@@ -18,7 +18,7 @@ export default function Home({ posts }) {
       <HomePost posts={posts} />
       <HomeTimeline />
       <HomeFooter />
-    </div>
+    </>
   )
 }
 

@@ -8,6 +8,7 @@ function Hero() {
 
   return (
     <Box
+      as='header'
       id='hero'
       d='flex'
       flexDir={{ base: 'column', xl: 'row' }}
