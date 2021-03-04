@@ -54,7 +54,7 @@ function HomeFooter() {
           spacing={{ base: 4, md: 8 }}
         >
           <GradientHeading>Location</GradientHeading>
-          <Text>
+          <Text color='gray.700'>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo eaque
             autem suscipit minima placeat natus quod nostrum aperiam
             perspiciatis. Debitis.

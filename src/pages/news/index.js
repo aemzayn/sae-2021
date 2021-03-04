@@ -9,7 +9,7 @@ import PageLayout from '../../components/sections/page-layout'
 export default function News({ posts }) {
   return (
     <PageLayout>
-      <SEO />
+      <SEO title='SAE Iberia News' />
       <VStack
         spacing={{ base: 6 }}
         align='flex-start'

@@ -12,7 +12,7 @@ const MotionButton = motion.custom(
   })
 )
 
-function SecondaryButton({ children = 'Button', href, icon, name }) {
+function SecondaryButton({ children = 'Button', href, icon, name, ...rest }) {
   return (
     <Link href={href}>
       <MotionButton
@@ -27,6 +27,16 @@ function SecondaryButton({ children = 'Button', href, icon, name }) {
         _active={{
           color: 'gradient.main',
         }}
+        _hover={{
+          bgColor: 'white',
+          transform: 'translateY(-5px)',
+          boxShadow: 'md',
+        }}
+        _active={{
+          transform: 'translateY(0)',
+          boxShadow: 'md',
+        }}
+        {...rest}
       >
         <a>{children}</a>
       </MotionButton>

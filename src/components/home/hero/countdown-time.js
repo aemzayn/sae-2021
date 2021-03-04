@@ -10,6 +10,7 @@ function CountdownTime() {
       justify='space-between'
       w={{ base: '100%', md: '90%', lg: '80%', xl: '100%' }}
       mx='auto'
+      userSelect='none'
     >
       <Flex fontSize={fontSize} align='center' ml={{ base: 1, md: 2 }}>
         <Image src='/icons/calendar.svg' mr={1} alt='Calendar icon' />

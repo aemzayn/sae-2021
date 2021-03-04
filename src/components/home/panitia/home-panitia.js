@@ -33,13 +33,16 @@ function HomePanitia() {
         </Heading>
 
         <Grid
+          maxW={{ base: '100%', md: '80%' }}
+          mx='auto'
           mt={{ base: 5, md: 12 }}
           templateColumns={{
             base: 'repeat(2, 1fr)',
-            md: 'repeat(5, 1fr)',
-            lg: 'repeat(6, 1fr)',
+            md: 'repeat(3, 1fr)',
+            lg: 'repeat(3, 1fr)',
           }}
-          gap={{ base: 5 }}
+          columnGap={{ base: 0 }}
+          rowGap={{ base: 4 }}
           flexDir='row'
           flexWrap='wrap'
           justifyItems='center'

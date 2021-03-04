@@ -18,8 +18,8 @@ function Panitia({ name = 'John Doe', role = 'Anggota', img }) {
         borderRadius='50px'
       >
         <Image
-          w='100%'
-          h='100%'
+          w={{ base: '70%' }}
+          h={{ base: '70%' }}
           objectFit='cover'
           objectPosition='center'
           src='https://upload.wikimedia.org/wikipedia/commons/1/1e/Default-avatar.jpg'
@@ -29,7 +29,13 @@ function Panitia({ name = 'John Doe', role = 'Anggota', img }) {
         />
       </Box>
       <VStack mt='2' spacing={{ base: 1 }}>
-        <Heading as='h3' size={nameSize} fontWeight='normal' textAlign='center'>
+        <Heading
+          as='h3'
+          size={nameSize}
+          fontWeight='normal'
+          color='gray.700'
+          textAlign='center'
+        >
           {name}
         </Heading>
         <Text color='gray.500' textAlign='center'>

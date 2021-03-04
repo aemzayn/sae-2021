@@ -23,6 +23,7 @@ function CountdownItem({ label, time = '00' }) {
       boxShadow={{ base: 'lg', md: 'xl' }}
       mx={{ base: 1, md: 2, xl: 0 }}
       w={{ base: 'auto', xl: '100%' }}
+      userSelect='none'
     >
       <Box
         py={{ base: 5, md: 8, lg: 12, xl: 8 }}

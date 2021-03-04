@@ -1,6 +1,6 @@
 import { Heading, useBreakpointValue } from '@chakra-ui/react'
 
-function GradientHeading({ children }) {
+function GradientHeading({ children, ...rest }) {
   const titleSize = useBreakpointValue({ base: '2xl' })
   return (
     <Heading
@@ -9,6 +9,7 @@ function GradientHeading({ children }) {
       bg='gradient.main'
       backgroundClip='text'
       style={{ WebkitTextFillColor: 'transparent' }}
+      {...rest}
     >
       {children}
     </Heading>

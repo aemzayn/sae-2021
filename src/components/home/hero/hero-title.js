@@ -17,6 +17,7 @@ function HeroTitle() {
       color='brand.blue'
       w={{ base: '100%', md: '90%', xl: '100%' }}
       mx={{ base: 'auto', xl: 0 }}
+      userSelect='none'
     >
       OISAA Symposium America-Europe Region
     </Heading>
