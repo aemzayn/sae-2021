@@ -13,8 +13,8 @@ function HomePanitia() {
   return (
     <Box
       bg='gradient.orange'
-      py={{ base: '5vh' }}
-      mb={{ base: '10vh', md: '15vh' }}
+      py={{ base: 20 }}
+      // mb={{ base: '10vh', md: '15vh' }}
       as='section'
     >
       <Box
@@ -42,7 +42,7 @@ function HomePanitia() {
             lg: 'repeat(3, 1fr)',
           }}
           columnGap={{ base: 0 }}
-          rowGap={{ base: 4 }}
+          rowGap={{ base: 6, lg: 8 }}
           flexDir='row'
           flexWrap='wrap'
           justifyItems='center'

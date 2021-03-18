@@ -12,7 +12,8 @@ export default function HomePost({ posts }) {
       mx='auto'
       w='90%'
       align='flex-start'
-      mb={{ base: '10vh', md: '15vh' }}
+      py={{ base: 20, md: 40 }}
+      // mb={{ base: '10vh', md: '15vh' }}
     >
       <HomePostTitle />
       <VStack spacing={{ base: 7 }}>

@@ -7,7 +7,7 @@ import { previous_sae } from '../../components/previoussae/previoussae.json'
 
 export default function PreviousSae() {
   return (
-    <PageLayout pb={4}>
+    <PageLayout pb={{ base: 4, lg: 8 }}>
       <SEO
         title='Previous SAE'
         description='Dokumentasi SAE terdahulu'

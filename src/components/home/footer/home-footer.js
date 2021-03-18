@@ -1,6 +1,6 @@
 import { Box, Flex, HStack, Text, VStack } from '@chakra-ui/react'
+import { Instagram, Mail } from '../../../assets/icons'
 import GradientHeading from '../../sections/gradientHeading'
-import ContactIcon from './contact-icon'
 
 function HomeFooter() {
   return (
@@ -22,7 +22,13 @@ function HomeFooter() {
           <GradientHeading>Contact</GradientHeading>
           <Flex flexDir={{ base: 'column' }}>
             <HStack spacing={{ base: 2 }} mb={{ base: 4 }}>
-              <ContactIcon src='/icons/mail.svg' alt='instagram icon' />
+              <Mail
+                p={{ base: 1 }}
+                borderRadius='md'
+                bg='brand.main'
+                w={{ base: '1.75rem', md: '2rem' }}
+                h={{ base: '1.75rem', md: '2rem' }}
+              />
               <Text
                 color='brand.blue'
                 as='a'
@@ -32,7 +38,13 @@ function HomeFooter() {
               </Text>
             </HStack>
             <HStack spacing={{ base: 2 }}>
-              <ContactIcon src='/icons/instagram.svg' alt='instagram icon' />
+              <Instagram
+                p={{ base: 1 }}
+                borderRadius='md'
+                bg='brand.main'
+                w={{ base: '1.75rem', md: '2rem' }}
+                h={{ base: '1.75rem', md: '2rem' }}
+              />
               <Text
                 as='a'
                 href='https://instagram.com/saeiberia2021'

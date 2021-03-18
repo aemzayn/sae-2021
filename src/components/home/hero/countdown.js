@@ -8,7 +8,7 @@ import CountdownTime from './countdown-time'
 const Completionist = () => <span>You are good to go!</span>
 
 function Countdown() {
-  const [date, setDate] = useState('2021-03-21T17:00:00.000Z')
+  const [date, setDate] = useState('2021-04-30T17:00:00.000Z')
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
       // Render a complete state

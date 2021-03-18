@@ -1,5 +1,6 @@
 import {
   Box,
+  Center,
   Heading,
   Image,
   Text,
@@ -11,15 +12,10 @@ function Panitia({ name = 'John Doe', role = 'Anggota', img }) {
   const nameSize = useBreakpointValue({ base: 'md', md: 'md', lg: 'lg' })
   return (
     <Box>
-      <Box
-        d='flex'
-        alignItems='center'
-        justifyContent='center'
-        borderRadius='50px'
-      >
+      <Center>
         <Image
-          w={{ base: '70%' }}
-          h={{ base: '70%' }}
+          w={{ base: '50%' }}
+          h={{ base: '50%' }}
           objectFit='cover'
           objectPosition='center'
           src='https://upload.wikimedia.org/wikipedia/commons/1/1e/Default-avatar.jpg'
@@ -27,7 +23,7 @@ function Panitia({ name = 'John Doe', role = 'Anggota', img }) {
           draggable={false}
           alt={name}
         />
-      </Box>
+      </Center>
       <VStack mt='2' spacing={{ base: 1 }}>
         <Heading
           as='h3'

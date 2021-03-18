@@ -1,4 +1,5 @@
 import { Box, Heading, Image, Text, useBreakpointValue } from '@chakra-ui/react'
+import { ArrowRight } from '../../../assets/icons'
 import PrimaryButton from '../../buttons/primary-btn'
 
 function HeroAbout() {
@@ -69,7 +70,7 @@ function HeroAbout() {
         </Text>
 
         <PrimaryButton
-          icon={<Image src='/icons/arrow-right.svg' />}
+          icon={<ArrowRight w='1rem' h='1rem' />}
           name='Lanjut Baca'
           href='/news/menelusuri-lebih-dalam-simposium-ppi-dunia-kawasan-amerika-eropa'
         >

@@ -1,6 +1,6 @@
 import { Box, Text } from '@chakra-ui/react'
 
-function TimelineItem() {
+function TimelineItem({ id, timeline }) {
   return (
     <Box>
       <Text
@@ -9,12 +9,9 @@ function TimelineItem() {
         marginBottom={{ base: 2 }}
         color='brand.blue'
       >
-        01 April 2021
+        {timeline.date}
       </Text>
-      <Text color='gray.700'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis,
-        ex iusto iste amet nisi est. Repellat corrupti quo dolor!
-      </Text>
+      <Text color='gray.700'>{timeline.desc}</Text>
     </Box>
   )
 }

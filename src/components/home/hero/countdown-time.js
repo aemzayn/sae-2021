@@ -1,4 +1,5 @@
 import { Flex, Image, Text, useBreakpointValue } from '@chakra-ui/react'
+import { Calendar, Pin } from '../../../assets/icons'
 
 function CountdownTime() {
   const fontSize = useBreakpointValue({ base: 'md', lg: '2xl', xl: 'lg' })
@@ -13,11 +14,12 @@ function CountdownTime() {
       userSelect='none'
     >
       <Flex fontSize={fontSize} align='center' ml={{ base: 1, md: 2 }}>
-        <Image src='/icons/calendar.svg' mr={1} alt='Calendar icon' />
+        <Calendar mr={1} width='1rem' h='1rem' />
         <Text>Juni 2021</Text>
       </Flex>
       <Flex fontSize={fontSize} align='center' mr={{ base: 1, md: 2, xl: 0 }}>
-        <Image src='/icons/pin.svg' alt='Location icon' mr={1} />
+        <Pin mr={1} w='1rem' h='1rem' />
+        {/* <Image src='/icons/pin.svg' alt='Location icon' mr={1} /> */}
         <Text>Iberia</Text>
       </Flex>
     </Flex>
