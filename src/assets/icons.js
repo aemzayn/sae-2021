@@ -11,18 +11,16 @@ export const ArrowRight = props => (
     <g id='arrow-right' transform='translate(1.5 2.121)'>
       <path
         id='Path_8'
-        dataname='Path 8'
         d='M5,12H19'
         transform='translate(-5 -5)'
         fill='none'
         stroke='#fff'
-        stroke-linecap='round'
+        strokeLinecap='round'
         strokeLinejoin='round'
         strokeWidth='3'
       />
       <path
         id='Path_9'
-        dataname='Path 9'
         d='M12,5l7,7-7,7'
         transform='translate(-5 -5)'
         fill='none'
@@ -46,7 +44,6 @@ export const Calendar = props => (
     <g id='calendar' transform='translate(-1.5 -1.5)'>
       <path
         id='Path_5'
-        dataName='Path 5'
         d='M7.444,6.556V3m7.111,3.556V3m-8,7.111h8.889M4.778,19H17.222A1.778,1.778,0,0,0,19,17.222V6.556a1.778,1.778,0,0,0-1.778-1.778H4.778A1.778,1.778,0,0,0,3,6.556V17.222A1.778,1.778,0,0,0,4.778,19Z'
         fill='none'
         stroke='#fff'
@@ -57,11 +54,11 @@ export const Calendar = props => (
     </g>
   </chakra.svg>
 )
-export const Close = props => (
+export const CloseIcon = props => (
   <chakra.svg
     xmlns='http://www.w3.org/2000/svg'
-    width='24'
-    height='24'
+    width='24px'
+    height='24px'
     viewBox='0 0 24 24'
     {...props}
   >
@@ -76,6 +73,27 @@ export const Close = props => (
     ></path>
   </chakra.svg>
 )
+
+export const MenuIcon = props => (
+  <chakra.svg
+    xmlns='http://www.w3.org/2000/svg'
+    width='24px'
+    height='24px'
+    viewBox='0 0 24 24'
+    {...props}
+  >
+    <path
+      fill='none'
+      stroke='#000'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      strokeWidth='2'
+      d='M4 6h16M4 12h16m-7 6h7'
+      className='0'
+    ></path>
+  </chakra.svg>
+)
+
 export const Copyright = props => (
   <chakra.svg
     xmlns='http://www.w3.org/2000/svg'
@@ -92,6 +110,7 @@ export const Copyright = props => (
     ></path>
   </chakra.svg>
 )
+
 export const Instagram = props => (
   <chakra.svg
     xmlns='http://www.w3.org/2000/svg'
@@ -113,6 +132,7 @@ export const Instagram = props => (
     </g>
   </chakra.svg>
 )
+
 export const Mail = props => (
   <chakra.svg
     xmlns='http://www.w3.org/2000/svg'
@@ -134,25 +154,7 @@ export const Mail = props => (
     </g>
   </chakra.svg>
 )
-export const Menu = props => (
-  <chakra.svg
-    xmlns='http://www.w3.org/2000/svg'
-    width='24'
-    height='24'
-    viewBox='0 0 24 24'
-    {...props}
-  >
-    <path
-      fill='none'
-      stroke='#000'
-      strokeLinecap='round'
-      strokeLinejoin='round'
-      strokeWidth='2'
-      d='M4 6h16M4 12h16m-7 6h7'
-      className='0'
-    ></path>
-  </chakra.svg>
-)
+
 export const Pin = props => (
   <chakra.svg
     xmlns='http://www.w3.org/2000/svg'

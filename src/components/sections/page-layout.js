@@ -7,7 +7,7 @@ export default function PageLayout({ children, ...rest }) {
       maxW='1400px'
       color='gray.900'
       mx='auto'
-      minHeight='78vh'
+      minHeight={{ base: '83vh', md: '78vh' }}
       {...rest}
     >
       {children}

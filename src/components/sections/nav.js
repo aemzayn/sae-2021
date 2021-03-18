@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Box, Flex, Image, Stack, Text } from '@chakra-ui/react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { CloseIcon, MenuIcon } from '../../assets/icons'
 
 export default function Nav() {
   const [show, setShow] = useState(false)
@@ -116,10 +117,3 @@ function NavItem({ href, name, setShow }) {
     </Text>
   )
 }
-
-const MenuIcon = () => (
-  <Image src='/icons/menu.svg' alt='Nav menu open' loading='eager' />
-)
-const CloseIcon = () => (
-  <Image src='/icons/close.svg' alt='Nav menu close' loading='eager' />
-)
