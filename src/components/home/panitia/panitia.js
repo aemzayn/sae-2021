@@ -7,24 +7,21 @@ import {
   useBreakpointValue,
   VStack,
 } from '@chakra-ui/react'
+import BoringAvatar from 'boring-avatars'
 
-function Panitia({ name = 'John Doe', role = 'Anggota', img }) {
+function Panitia({ name = 'John Doe', role = 'Anggota', img, randomString }) {
   const nameSize = useBreakpointValue({ base: 'md', md: 'md', lg: 'lg' })
   return (
-    <Box>
-      <Center>
-        <Image
-          w={{ base: '50%' }}
-          h={{ base: '50%' }}
-          objectFit='cover'
-          objectPosition='center'
-          src='https://upload.wikimedia.org/wikipedia/commons/1/1e/Default-avatar.jpg'
-          borderRadius='50%'
-          draggable={false}
-          alt={name}
+    <VStack spacing={{ base: 2 }}>
+      <Center w={{ base: '50%', md: '55%' }} h={{ base: '50%', md: '55%' }}>
+        <BoringAvatar
+          size='100%'
+          name={randomString}
+          variant='beam'
+          colors={['#eba83a', '#eba83a', '#fff8d9', '#d5dbb3', '#C20D90']}
         />
       </Center>
-      <VStack mt='2' spacing={{ base: 1 }}>
+      <VStack spacing={{ base: 1 }}>
         <Heading
           as='h3'
           size={nameSize}
@@ -38,7 +35,7 @@ function Panitia({ name = 'John Doe', role = 'Anggota', img }) {
           {role}
         </Text>
       </VStack>
-    </Box>
+    </VStack>
   )
 }
 

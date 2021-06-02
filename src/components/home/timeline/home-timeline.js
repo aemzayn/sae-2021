@@ -1,39 +1,7 @@
 import { Box, Heading, useBreakpointValue } from '@chakra-ui/react'
 import TimelineItem from './timeline-item'
 import styles from './timeline.module.scss'
-
-const timeline = [
-  {
-    date: '01 May 2021',
-    desc:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. A sequi repudiandae cupiditate mollitia cumque, eveniet debitis culpa perspiciatis incidunt et!',
-  },
-  {
-    date: '07 May 2021',
-    desc:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. A sequi repudiandae cupiditate mollitia cumque, eveniet debitis culpa perspiciatis incidunt et!',
-  },
-  {
-    date: '14 May 2021',
-    desc:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. A sequi repudiandae cupiditate mollitia cumque, eveniet debitis culpa perspiciatis incidunt et!',
-  },
-  {
-    date: '21 May 2021',
-    desc:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. A sequi repudiandae cupiditate mollitia cumque, eveniet debitis culpa perspiciatis incidunt et!',
-  },
-  {
-    date: '28 May 2021',
-    desc:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. A sequi repudiandae cupiditate mollitia cumque, eveniet debitis culpa perspiciatis incidunt et!',
-  },
-  {
-    date: '03 June 2021',
-    desc:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. A sequi repudiandae cupiditate mollitia cumque, eveniet debitis culpa perspiciatis incidunt et!',
-  },
-]
+import TIMELINE from '../../../../TIMELINE'
 
 function HomeTimeline() {
   const titleSize = useBreakpointValue({ base: '2xl' })
@@ -51,8 +19,8 @@ function HomeTimeline() {
           Timeline
         </Heading>
         <Box className={styles.timeline}>
-          {timeline.map((time, id) => (
-            <TimelineItem key={id} id={id + 1} timeline={time} />
+          {TIMELINE.map((timeline, id) => (
+            <TimelineItem key={id} id={id + 1} timeline={timeline} />
           ))}
         </Box>
       </Box>

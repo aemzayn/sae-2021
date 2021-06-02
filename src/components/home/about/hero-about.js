@@ -1,6 +1,15 @@
-import { Box, Heading, Image, Text, useBreakpointValue } from '@chakra-ui/react'
+import {
+  Box,
+  Heading,
+  Image,
+  Text,
+  useBreakpointValue,
+  Icon,
+} from '@chakra-ui/react'
 import { ArrowRight } from '../../../assets/icons'
 import PrimaryButton from '../../buttons/primary-btn'
+import { HiArrowRight } from 'react-icons/hi'
+import { MdArrowForward } from 'react-icons/md'
 
 function HeroAbout() {
   const headingSize = useBreakpointValue({
@@ -70,7 +79,9 @@ function HeroAbout() {
         </Text>
 
         <PrimaryButton
-          icon={<ArrowRight w='1rem' h='1rem' />}
+          icon={
+            <Icon as={HiArrowRight} aria-label='Right icon' boxSize='1.25rem' />
+          }
           name='Lanjut Baca'
           href='/news/menelusuri-lebih-dalam-simposium-ppi-dunia-kawasan-amerika-eropa'
         >

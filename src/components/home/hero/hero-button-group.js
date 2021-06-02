@@ -1,7 +1,7 @@
-import { Box, Flex } from '@chakra-ui/react'
-import { Timeline } from '../../../assets/icons'
+import { Box, Flex, Icon } from '@chakra-ui/react'
 import PrimaryButton from '../../buttons/primary-btn'
 import SecondaryButton from '../../buttons/secondary-btn'
+import { MdTimeline } from 'react-icons/md'
 
 function HeroButtonGroup() {
   return (
@@ -13,7 +13,9 @@ function HeroButtonGroup() {
       w={{ base: '100%' }}
     >
       <PrimaryButton
-        icon={<Timeline w='1.5rem' h='1.5rem' />}
+        icon={
+          <Icon aria-label='Timeline' as={MdTimeline} w='1.5rem' h='1.5rem' />
+        }
         href='/#timeline'
         name='timeline'
       >

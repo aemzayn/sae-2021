@@ -1,6 +1,6 @@
-import { Box, Text } from '@chakra-ui/react'
+import { Box, Heading, Text } from '@chakra-ui/react'
 
-function TimelineItem({ id, timeline }) {
+function TimelineItem({ timeline }) {
   return (
     <Box>
       <Text
@@ -11,6 +11,9 @@ function TimelineItem({ id, timeline }) {
       >
         {timeline.date}
       </Text>
+      <Heading size='md' mb={{ base: 2 }}>
+        {timeline.title}
+      </Heading>
       <Text color='gray.700'>{timeline.desc}</Text>
     </Box>
   )

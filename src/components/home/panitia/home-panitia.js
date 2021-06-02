@@ -2,6 +2,7 @@ import {
   Box,
   Grid,
   Heading,
+  SimpleGrid,
   Stack,
   Text,
   useBreakpointValue,
@@ -32,28 +33,19 @@ function HomePanitia() {
           </Text>
         </Heading>
 
-        <Grid
-          maxW={{ base: '100%', md: '80%' }}
-          mx='auto'
+        <SimpleGrid
           mt={{ base: 5, md: 12 }}
-          templateColumns={{
-            base: 'repeat(2, 1fr)',
-            md: 'repeat(3, 1fr)',
-            lg: 'repeat(3, 1fr)',
-          }}
-          columnGap={{ base: 0 }}
-          rowGap={{ base: 6, lg: 8 }}
-          flexDir='row'
-          flexWrap='wrap'
-          justifyItems='center'
+          mx='auto'
+          maxW={{ base: '100%', md: '80%', lg: '75%' }}
+          columns={{ base: 2, md: 3 }}
         >
-          <Panitia />
-          <Panitia />
-          <Panitia />
-          <Panitia />
-          <Panitia />
-          <Panitia />
-        </Grid>
+          <Panitia randomString='pemhbVvnHK' role='Penanggung Jawab' />
+          <Panitia randomString='NIOPTSEsSH' role='Ketua Acara' />
+          <Panitia randomString='BLhaTisesW' role='Sekretaris' />
+          <Panitia randomString='CWaGFtFCcL' role='Ketua Divisi Media' />
+          <Panitia randomString='dpEzQfGNZI' role='Ketua Divisi Humas' />
+          <Panitia randomString='jUdnxYsbNR' role='Ketua Divisi Logistik' />
+        </SimpleGrid>
       </Box>
     </Box>
   )
